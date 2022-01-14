@@ -1,0 +1,9 @@
+name: MlFlowPrueba
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      n_estimators_: {type: int, default: 10}
+    command: "python train.py {n_estimators_}"
